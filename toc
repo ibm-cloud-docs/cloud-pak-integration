@@ -1,0 +1,32 @@
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+
+{: .toc subcollection="cloud-pak-integration" audience="cloudpak" category="integration" href="/docs/cloud-pak-integration?topic=cloud-pak-integration-getting-started#getting-started"}
+IBM Cloud Pak for Integration
+
+    {: .navgroup id="learn"}
+    getting-started.md
+    {: .navgroup-end}
+	
+<!-- Add the topic to your `toc` file:
+
+
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+
+{: .toc subcollection="<Folder_name>" audience="oss" category="<category>" href="/docs/<folder_name>?topic=<subcollection>getting-started"}
+<Cloud Pak Name>
+
+    {: .navgroup id="learn"}
+    getting-started.md
+
+    {: .topicgroup}
+    Related links
+        [Link text](link URL)
+    {: .navgroup-end}
+
+    {: .navgroup id="reference"}
+    Reference
+    [Link text](link URL)
+    {: .navgroup-end}
+-->
