@@ -1,5 +1,3 @@
-<!-- Name your file `getting-started.md` and include it in the Learn navigation group in your toc file. -->
-
 ---
 
 copyright:
@@ -12,7 +10,6 @@ subcollection: cloud-pak-integration
 
 ---
 
-<!-- Common attributes used in the template are defined as follows: -->
 {:shortdesc: .shortdesc}
 {:screen: .screen}
 {:codeblock: .codeblock}
@@ -21,12 +18,6 @@ subcollection: cloud-pak-integration
 {:note: .note}
 {:external: target="_blank" .external}
 
-<!-- This template is for getting started with IBM Cloud Paks. It is a task template intended to document productive use of the offering.  -->
-
-
-
-
-<!-- Please delete content examples and coding that you are not using for your service. -->
 
 # Getting started with IBM Cloud Pak for Integration
 {: #getting-started}
@@ -49,7 +40,7 @@ IBM Cloud Pak for Integration includes the following components.
   - [DataPower Gateway](https://www.ibm.com/support/knowledgecenter/SS9H2Y_7.7.0/com.ibm.dp.doc/welcome.html){: external}, for gateway services.
   - [Aspera High Speed Transfer Server](https://www.ibm.com/blogs/bluemix/2018/12/enable-hybrid-cloud-data-movement-with-aspera-for-ibm-cloud-private/){: external}, for large file transfers
 
-<!-- Include a prerequisites paragraph for any prerequisites to be met. For example: REQUIRED -->
+
 ## Before you begin
 Before you can install the Cloud Pak on {{site.data.keyword.cloud}}, you must set up a Red Hat OpenShift Cluster. Go to [Red Hat OpenShift Cluster](https://cloud.ibm.com/kubernetes/catalog/openshiftcluster).  You need to create a cluster.
 
@@ -97,25 +88,3 @@ The Platform Navigator home page offers the ability to create instances of the v
 
 See the full documentation at the [Knowledge Center](https://www.ibm.com/support/knowledgecenter/SSGT7J_19.3/welcome.html){: external}
 
-<!-- Add the topic to your `toc` file:
-
-
-{:navgroup: .navgroup}
-{:topicgroup: .topicgroup}
-
-{: .toc subcollection="<Folder_name>" audience="oss" category="<category>" href="/docs/<folder_name>?topic=<subcollection>getting-started"}
-<Cloud Pak Name>
-
-    {: .navgroup id="learn"}
-    getting-started.md
-
-    {: .topicgroup}
-    Related links
-        [Link text](link URL)
-    {: .navgroup-end}
-
-    {: .navgroup id="reference"}
-    Reference
-    [Link text](link URL)
-    {: .navgroup-end}
--->
