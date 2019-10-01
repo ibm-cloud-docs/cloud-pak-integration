@@ -35,8 +35,8 @@ IBM Cloud Pak for Integration includes the following components.
   - [Cloud Private](https://www.ibm.com/support/knowledgecenter/en/SSBS6K_3.2.0/kc_welcome_containers.html){: external}, providing platform services such as logging.
   - [API Connect](https://www.ibm.com/support/knowledgecenter/en/SSMNED_2018/mapfiles/getting_started.html){: external}, implementing managed APIs
   - [App Connect Enterprise](https://www.ibm.com/support/knowledgecenter/en/SSTTDS_11.0.0/com.ibm.ace.home.doc/help_home.htm){: external}, providing integration workflows
-  - [MQ Advanced](https://www.ibm.com/support/knowledgecenter/en/SSKSWQ){: external}, for robust guaranteed transport
-  - [Event Streams](https://www.ibm.com/support/knowledgecenter/en/SSBS6K_/featured_applications/eventstreams.html){: external}, for event handling based on Kafka
+  - [MQ Advanced](https://www.ibm.com/support/knowledgecenter/en/SSFKSJ_9.1.0/com.ibm.mq.helphome.v91.doc/WelcomePagev9r1.htm){: external}, for robust guaranteed transport
+  - [Event Streams](https://ibm.github.io/event-streams/ ){: external}, for event handling based on Kafka
   - [DataPower Gateway](https://www.ibm.com/support/knowledgecenter/SS9H2Y_7.7.0/com.ibm.dp.doc/welcome.html){: external}, for gateway services.
   - [Aspera High Speed Transfer Server](https://www.ibm.com/blogs/bluemix/2018/12/enable-hybrid-cloud-data-movement-with-aspera-for-ibm-cloud-private/){: external}, for large file transfers
 
