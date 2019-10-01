@@ -57,7 +57,7 @@ The license purchased through IBM Passport Advantage appears in the list of avai
 
 Enter the identifier for the OpenShift cluster you have available in the RedHat OpenShift cluster field.
 
-In the Project field, select from an existing project or create a new one by entering a unique project name. A project is similar to a Kubernetes cluster namespace, and the list is populated from your Red Hat OpenShift environment.
+In the Project field, select from an existing project or create a new one by entering a unique project name. A project is similar to a Kubernetes cluster namespace, and the list is populated from your Red Hat OpenShift environment.  Note this project name is used as the namespace for the Platform Navigator.  Typically, this is named "integration".
 
 ## Step 3. Configure your workspace
 {: step3}
