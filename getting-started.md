@@ -36,7 +36,7 @@ IBM Cloud Pak for Integration includes the following components.
   - [API Connect](https://www.ibm.com/support/knowledgecenter/en/SSMNED_2018/mapfiles/getting_started.html){: external}, implementing managed APIs
   - [App Connect Enterprise](https://www.ibm.com/support/knowledgecenter/en/SSTTDS_11.0.0/com.ibm.ace.home.doc/help_home.htm){: external}, providing integration workflows
   - [MQ Advanced](https://www.ibm.com/support/knowledgecenter/en/SSFKSJ_9.1.0/com.ibm.mq.helphome.v91.doc/WelcomePagev9r1.htm){: external}, for robust guaranteed transport
-  - [Event Streams](https://ibm.github.io/event-streams/ ){: external}, for event handling based on Kafka
+  - [Event Streams](https://ibm.github.io/event-streams/){: external}, for event handling based on Kafka
   - [DataPower Gateway](https://www.ibm.com/support/knowledgecenter/SS9H2Y_7.7.0/com.ibm.dp.doc/welcome.html){: external}, for gateway services.
   - [Aspera High Speed Transfer Server](https://www.ibm.com/blogs/bluemix/2018/12/enable-hybrid-cloud-data-movement-with-aspera-for-ibm-cloud-private/){: external}, for large file transfers
 
@@ -82,7 +82,9 @@ Check the box verifying you have read the license agreements.  Click **Install**
 
 ## Next steps
 
-Once the installation completes, links to your Cloud Pak for Integration landing page appear.
+Once the installation completes, you can discover the URL for the Platform Navigator with the following command.
+
+``oc get route icp-proxy -n kube-system -o jsonpath='{.spec.host}'`/integration``
 
 The Platform Navigator home page offers the ability to create instances of the various components.
 
