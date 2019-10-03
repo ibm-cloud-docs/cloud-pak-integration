@@ -84,7 +84,7 @@ Check the box verifying you have read the license agreements.  Click **Install**
 
 Once the installation completes, you can discover the URL for the Platform Navigator with the following command.
 
-``oc get route icp-proxy -n kube-system -o jsonpath='{.spec.host}'`/integration``
+`oc get route icp-proxy -n kube-system -o jsonpath='{.spec.host}'`/integration`
 
 The Platform Navigator home page offers the ability to create instances of the various components.
 
