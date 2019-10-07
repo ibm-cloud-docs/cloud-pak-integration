@@ -57,7 +57,7 @@ The license purchased through IBM Passport Advantage appears in the list of avai
 
 Enter the identifier for the OpenShift cluster you have available in the RedHat OpenShift cluster field.
 
-In the Project field, select from an existing project or create a new one by entering a unique project name. A project is similar to a Kubernetes cluster namespace, and the list is populated from your Red Hat OpenShift environment.  Note this project name is used as the namespace for the Platform Navigator.  Typically, this is named "integration".
+In the Project field, select from an existing project or create a new one by entering a unique project name. A project is similar to a Kubernetes cluster namespace, and the list is populated from your Red Hat OpenShift environment.  Note this project name is used as the namespace for the Platform Navigator.  **Note:** do not use the name "integration".
 
 ## Step 3. Configure your workspace
 {: step3}
@@ -79,14 +79,18 @@ You must enter a value for the **csDefaultAdminPassword**.  Do not lose this val
 
 Check the box verifying you have read the license agreements.  Click **Install**.
 
+The namespace you use for installation of the Platform Navigator should match the name you set for the project.
+
 
 ## Next steps
 
-Once the installation completes, you can discover the host URL for the Platform Navigator with the following command.
+Once the installation completes, click **Offering Dashboard** to open the Platform Navigator.
 
-`oc get route icp-proxy -n kube-system -o jsonpath='{.spec.host}'
+You can also discover the host URL for the Platform Navigator with the following command.
 
-The full URL will then resemble "https://icp-proxy-host/integration".
+`oc get route icp-proxy -n kube-system -o jsonpath='{.spec.host}'`
+
+The full URL will then resemble "https://icp-proxy-host/icp4i".
 
 The Platform Navigator home page offers the ability to create instances of the various components.
 
