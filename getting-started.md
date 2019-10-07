@@ -90,7 +90,7 @@ You can also discover the host URL for the Platform Navigator with the following
 
 `oc get route icp-proxy -n kube-system -o jsonpath='{.spec.host}'`
 
-The full URL will then resemble "https://icp-proxy-host/integration".
+The full URL will then resemble "https://icp-proxy-host/icp4i".
 
 The Platform Navigator home page offers the ability to create instances of the various components.
 
