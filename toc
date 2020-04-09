@@ -2,7 +2,7 @@
 {:topicgroup: .topicgroup}
 
 {: .toc subcollection="cloud-pak-integration" audience="cloudpak" category="cloud_pak" href="/docs/cloud-pak-integration?topic=cloud-pak-integration-getting-started#getting-started" path="cloud-pak-integration"}
-IBM Cloud Pak for Integration
+Cloud Pak for Integration
 
     {: .navgroup id="learn"}
     getting-started.md
