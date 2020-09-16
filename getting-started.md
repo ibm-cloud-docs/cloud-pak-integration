@@ -50,7 +50,7 @@ You must purchase a license through [IBM Passport Advantage](https://www.ibm.com
 ## Step 1. Assign a license
 {: step1}
 
-The license purchased through IBM Passport Advantage appears in the list of available entitlements  Click an entitlement block to select it.  Click **Assign**.
+The license purchased through IBM Passport Advantage appears in the list of available entitlements. Click an entitlement block to select it.  Click **Assign**.
 
 ## Step 2. Configure your installation environment
 {: step2}
