@@ -65,12 +65,12 @@ In the Project field, select from an existing project or create a new one by ent
 Enter a name for the workspace.  A suggested name is provided.  You can change this value.
 
 ## Step 4. Set the deployment values
-{: step5}
+{: step4}
 
 You must enter a value for the **csDefaultAdminPassword**.  Do not lose this value.
 
 ## Step 5. Install
-{: step6}
+{: step5}
 
 Check the box verifying you have read the license agreements.  Click **Install**.
 
