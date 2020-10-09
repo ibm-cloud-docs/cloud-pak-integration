@@ -44,17 +44,21 @@ IBM Cloud Pak for Integration includes the following components.
 ## Before you begin
 Before you can install the Cloud Pak on {{site.data.keyword.cloud}}, you must set up a Red Hat OpenShift Cluster. Go to [Red Hat OpenShift Cluster](https://cloud.ibm.com/kubernetes/catalog/openshiftcluster){: external}.  You need to create a cluster.
 
-You must purchase a license through [IBM Passport Advantage](https://www.ibm.com/software/passportadvantage/index.html){: external} or register for a 60-day trial license. See Step 1. Assign the license section below. 
+You must purchase a license through [IBM Passport Advantage](https://www.ibm.com/software/passportadvantage/index.html){: external} or register for a 60-day trial license.
 
 
-## Step 1. Assign a license
+## Step 1. Obtain a license
 {: step1}
 
 If you don't already have a license, you can:
 
   - Purchase a license through [IBM Passport Advantage](https://www.ibm.com/software/passportadvantage/index.html){: external}
-  - [Register](https://www.ibm.com/account/reg/signup?formid=urx-46640){: external} for a 60-day trial license of IBM Cloud Pak for Data
-**Important**: The trial is for IBM Cloud Pak for Integration software only. The trial does not include entitlement to the Red Hat OpenShift Container Platform.
+  - [Register](https://www.ibm.com/account/reg/signup?formid=urx-46640){: external} for a 60-day trial license of IBM Cloud Pak for Integration
+
+    **Important**: The trial is for IBM Cloud Pak for Integration software only. The trial does not include entitlement to the Red Hat OpenShift Container Platform.
+
+## Step 2. Assign a license
+{: step2}
 
 To assign your license, follow these steps:
 
@@ -63,25 +67,25 @@ To assign your license, follow these steps:
 3. If there are no licenses to assign on the Licenses and entitlements page, click Check IBM Passport Advantage.
 4. Select the appropriate license and click **Assign**.
 
-## Step 2. Configure your installation environment
-{: step2}
+## Step 3. Configure your installation environment
+{: step3}
 
 Enter the identifier for the OpenShift cluster you have available in the RedHat OpenShift cluster field.
 
 In the Project field, select from an existing project or create a new one by entering a unique project name. A project is similar to a Kubernetes cluster namespace, and the list is populated from your Red Hat OpenShift environment.  Note this project name is used as the namespace for the Platform Navigator. 
 
-## Step 3. Configure your workspace
-{: step3}
+## Step 4. Configure your workspace
+{: step4}
 
 Enter a name for the workspace.  A suggested name is provided.  You can change this value.
 
-## Step 4. Set the deployment values
-{: step4}
+## Step 5. Set the deployment values
+{: step5}
 
 You must enter a value for the **csDefaultAdminPassword**.  Do not lose this value.
 
-## Step 5. Install
-{: step5}
+## Step 6. Install
+{: step6}
 
 Check the box verifying you have read the license agreements.  Click **Install**.
 
