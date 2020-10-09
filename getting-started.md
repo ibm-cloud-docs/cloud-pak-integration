@@ -44,13 +44,24 @@ IBM Cloud Pak for Integration includes the following components.
 ## Before you begin
 Before you can install the Cloud Pak on {{site.data.keyword.cloud}}, you must set up a Red Hat OpenShift Cluster. Go to [Red Hat OpenShift Cluster](https://cloud.ibm.com/kubernetes/catalog/openshiftcluster){: external}.  You need to create a cluster.
 
-You must purchase a license through [IBM Passport Advantage](https://www.ibm.com/software/passportadvantage/index.html){: external}. 
+You must purchase a license through [IBM Passport Advantage](https://www.ibm.com/software/passportadvantage/index.html){: external} or register for a 60-day trial license. See Step 1. Assign the license section below. 
 
 
 ## Step 1. Assign a license
 {: step1}
 
-The license purchased through IBM Passport Advantage appears in the list of available entitlements  Click an entitlement block to select it.  Click **Assign**.
+If you don't already have a license, you can:
+
+  - Purchase a license through [IBM Passport Advantage](https://www.ibm.com/software/passportadvantage/index.html){: external}
+  - [Register](https://www.ibm.com/account/reg/signup?formid=urx-46640){: external} for a 60-day trial license of IBM Cloud Pak for Data
+**Important**: The trial is for IBM Cloud Pak for Integration software only. The trial does not include entitlement to the Red Hat OpenShift Container Platform.
+
+To assign your license, follow these steps:
+
+1. Log in to your [IBM Cloud account](https://cloud.ibm.com/login){: external}.
+2. If you don't see any licenses to assign, navigate to **Manage > Account** and then click **Licenses and entitlements** in the navigation menu.
+3. If there are no licenses to assign on the Licenses and entitlements page, click Check IBM Passport Advantage.
+4. Select the appropriate license and click **Assign**.
 
 ## Step 2. Configure your installation environment
 {: step2}
