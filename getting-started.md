@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2019-2020
+  years: 2019, 2020
 lastupdated: "2020-10-09"
 
 keywords: getting started tutorial, getting started, Cloud Pak for Integration, integration
