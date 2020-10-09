@@ -44,8 +44,6 @@ IBM Cloud Pak for Integration includes the following components.
 ## Before you begin
 Before you can install the Cloud Pak on {{site.data.keyword.cloud}}, you must set up a Red Hat OpenShift Cluster. Go to [Red Hat OpenShift Cluster](https://cloud.ibm.com/kubernetes/catalog/openshiftcluster){: external}.  You need to create a cluster.
 
-You must purchase a license through [IBM Passport Advantage](https://www.ibm.com/software/passportadvantage/index.html){: external} or register for a 60-day trial license.
-
 
 ## Step 1. Obtain a license
 {: step1}
