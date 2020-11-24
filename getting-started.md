@@ -44,6 +44,7 @@ IBM Cloud Pak for Integration includes the following components.
 ## Before you begin
 Before you can install the Cloud Pak on {{site.data.keyword.cloud}}, you must set up a Red Hat OpenShift Cluster. Go to [Red Hat OpenShift Cluster](https://cloud.ibm.com/kubernetes/catalog/openshiftcluster){: external}.  You need to create a cluster.
 
+Installation of Cloud Pak for Integration on IBM Cloud using the IBM software catalog doesn't support MZR clusters. It uses block storage that can't be accessed from multiple zones, and file storage that doesn't bind to an MZR cluster when the demoPreparation parameter is set to true.
 
 ## Step 1. Obtain a license
 {: step1}
