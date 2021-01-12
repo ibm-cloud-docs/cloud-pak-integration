@@ -39,7 +39,7 @@ Once you have filled in the form details and clicked **Next** you will be sent a
 Once complete the form will redirect you to this page where you can continue to the next step.
 
 ## Step 2. Using your 60-day subscription trial key
-{: step2}
+{: #step2}
 
 After signing up for the IBM Cloud Pak for Integration trial an IBM ID will be created for you (if you didn’t already have one) and you will be assigned a container software entitlement key so that you are entitled to use the IBM Cloud Pak for Integration container image.
 
