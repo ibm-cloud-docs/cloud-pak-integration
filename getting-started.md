@@ -42,11 +42,11 @@ IBM Cloud Pak for Integration includes the following components.
 
 
 ## Before you begin
-Before you can install the Cloud Pak on {{site.data.keyword.cloud}}, you must set up a Red Hat OpenShift Cluster [here](https://cloud.ibm.com/kubernetes/catalog/openshiftcluster){: external}.  
+Before you can install the Cloud Pak on {{site.data.keyword.cloud}}, you must set up a [Red Hat OpenShift Cluster](https://cloud.ibm.com/kubernetes/catalog/openshiftcluster){: external}.
 
-The smallest cluster size that should be created to run CP4I is 1 worker with 32 vCPUs & 128GB memory.  This will give you enough capacity to run Cloud Pak for Integration Common Services, Platform Navigator and a few small capabilities.  To check the full details on the minimum required resources to run calabilities [click here] (https://cloud.ibm.com/catalog/content/ibm-cp-integration-72f63273-f2f6-4e9c-8626-60fe798c57be-global){: external}.
+The smallest cluster size that should be created to run CP4I is 1 worker with 32 vCPUs & 128GB memory.  This will give you enough capacity to run Cloud Pak for Integration Common Services, Platform Navigator and a few small capabilities.  For full details on the minimum required resources to run capabilities, see the [Cloud Pak for Integration Readme] (https://cloud.ibm.com/catalog/content/ibm-cp-integration#about){: external}.
 
-Installation of Cloud Pak for Integration on IBM Cloud using the IBM software catalog doesn't support MZR clusters. It uses block storage that can't be accessed from multiple zones, and file storage that doesn't bind to an MZR cluster when the demoPreparation parameter is set to true.
+Installation of Cloud Pak for Integration on IBM Cloud using the IBM software catalog does not support MZR clusters. It uses block storage that can't be accessed from multiple zones, and file storage that doesn't bind to an MZR cluster when the demoPreparation parameter is set to true.
 
 ## Step 1. Obtain a license
 {: step1}
@@ -107,5 +107,5 @@ The full URL will then resemble "https://(project-name)-navigator-pn.(cluster-na
 
 The Platform Navigator home page offers the ability to create instances of the various components.
 
-See the full documentation at the [Knowledge Center](https://www.ibm.com/support/knowledgecenter/SSGT7J_19.3/welcome.html){: external}.  See **Capability deployment.**
+See the full documentation at the [Knowledge Center](https://www.ibm.com/support/knowledgecenter/SSGT7J_20.3/welcome.html){: external}.  See **Capability deployment.**
 
