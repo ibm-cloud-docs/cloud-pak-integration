@@ -42,7 +42,9 @@ IBM Cloud Pak for Integration includes the following components.
 
 
 ## Before you begin
-Before you can install the Cloud Pak on {{site.data.keyword.cloud}}, you must set up a Red Hat OpenShift Cluster. Go to [Red Hat OpenShift Cluster](https://cloud.ibm.com/kubernetes/catalog/openshiftcluster){: external}.  You need to create a cluster.
+Before you can install the Cloud Pak on {{site.data.keyword.cloud}}, you must set up a Red Hat OpenShift Cluster [here](https://cloud.ibm.com/kubernetes/catalog/openshiftcluster){: external}.  
+
+The smallest cluster size that should be created to run CP4I is 1 worker with 32 vCPUs & 128GB memory.  This will give you enough capacity to run Cloud Pak for Integration Common Services, Platform Navigator and a few small capabilities.  To check the full details on the minimum required resources to run calabilities [click here] (https://cloud.ibm.com/catalog/content/ibm-cp-integration-72f63273-f2f6-4e9c-8626-60fe798c57be-global){: external}.
 
 Installation of Cloud Pak for Integration on IBM Cloud using the IBM software catalog doesn't support MZR clusters. It uses block storage that can't be accessed from multiple zones, and file storage that doesn't bind to an MZR cluster when the demoPreparation parameter is set to true.
 
@@ -61,9 +63,9 @@ If you don't already have a license, you can:
 
 To assign your license, follow these steps:
 
-1. Log in to your [IBM Cloud account](https://cloud.ibm.com/login){: external}.
-2. If you don't see any licenses to assign, navigate to **Manage > Account** and then click **Licenses and entitlements** in the navigation menu.
-3. If there are no licenses to assign on the Licenses and entitlements page, click Check IBM Passport Advantage.
+1. Sign up to, or log in to your [IBM Cloud account](https://cloud.ibm.com/login){: external}.
+2. Navigate to **Manage > Account** and then click **Licenses and entitlements** in the navigation menu.
+3. If there are no licenses to assign on the Licenses and entitlements page, click **Check IBM Passport Advantage**.
 4. Select the appropriate license and click **Assign**.
 
 ## Step 3. Select your cluster
