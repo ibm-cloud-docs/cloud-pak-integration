@@ -44,7 +44,7 @@ IBM Cloud Pak for Integration includes the following components.
 ## Before you begin
 Before you can install the Cloud Pak on {{site.data.keyword.cloud}}, you must set up a [Red Hat OpenShift Cluster](https://cloud.ibm.com/kubernetes/catalog/openshiftcluster){: external}.
 
-The smallest cluster size that should be created to run CP4I is 1 worker with 32 vCPUs & 128GB memory.  This will give you enough capacity to run Cloud Pak for Integration Common Services, Platform Navigator and a few small capabilities.  For full details on the minimum required resources to run capabilities, see the [Cloud Pak for Integration Readme] (https://cloud.ibm.com/catalog/content/ibm-cp-integration#about){: external}.
+The smallest cluster size that should be created to run CP4I is 1 worker with 32 vCPUs & 128GB memory.  This will give you enough capacity to run Cloud Pak for Integration Common Services, Platform Navigator and a few small capabilities.  For full details on the minimum required resources to run capabilities, see the [Cloud Pak for Integration Readme](https://cloud.ibm.com/catalog/content/ibm-cp-integration#about){: external}.
 
 Installation of Cloud Pak for Integration on IBM Cloud using the IBM software catalog does not support MZR clusters. It uses block storage that can't be accessed from multiple zones, and file storage that doesn't bind to an MZR cluster when the demoPreparation parameter is set to true.
 
