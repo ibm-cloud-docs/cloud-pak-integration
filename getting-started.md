@@ -46,7 +46,7 @@ Before you can install the Cloud Pak on {{site.data.keyword.cloud}}, you must se
 
 The smallest cluster size that should be created to run CP4I is 1 worker with 32 vCPUs & 128GB memory.  This will give you enough capacity to run Cloud Pak for Integration Common Services, Platform Navigator and a few small capabilities.  For full details on the minimum required resources to run capabilities, see the [Cloud Pak for Integration Readme](https://cloud.ibm.com/catalog/content/ibm-cp-integration#about){: external}.
 
-Installation of Cloud Pak for Integration on IBM Cloud using the IBM software catalog does not support MZR clusters. See [Known limitations](#knownlimitations) for more details.
+Installation of Cloud Pak for Integration on IBM Cloud using the IBM software catalog does not support MZR clusters. See [Known limitations](#known-limitations) for more details.
 
 ## Step 1. Obtain a license
 {: step1}
@@ -111,7 +111,7 @@ See the full documentation in [IBM Documentation](https://www.ibm.com/support/kn
 
 
 ## Known limitations
-{: knownlimitations}
+{: known-limitations}
 
 The IBM Cloud software catalog installer for Cloud Pak for Integration does not support;
 - Multi-zone region (MZR) clusters in IBM Cloud Classic infrastructure
