@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2021
-lastupdated: "2021-04-12"
+lastupdated: "2021-04-14"
 
 keywords: getting started tutorial, getting started, Cloud Pak for Integration, integration
 
@@ -119,5 +119,5 @@ The IBM Cloud software catalog installer for Cloud Pak for Integration does not 
 
 This restriction is because those environments do not natively provide the replicated File storage that is required to deploy Cloud Pak for Integration in a resilient fashion.
 
-**Installation into MZR Classic clusters and IBM Cloud VPC is supported by manual installation of Cloud Pak for Integration** (i.e. not using the software catalog installer) which enables the user to specify their choice of replicated storage provider that they have separately made available for use in the cluster, such as Portworx. Customers wishing to manually install Cloud Pak for Integration in this way can find instructions in [IBM Documentation here](https://www.ibm.com/docs/en/cloud-paks/cp-integration/2021.1?topic=installing){:external}.
+**Installation into MZR Classic clusters and IBM Cloud VPC is supported by manual installation of Cloud Pak for Integration** (i.e. not using the software catalog installer) which enables the user to specify your choice of replicated storage provider that has been separately made available for use in the cluster, such as Portworx. Customers wishing to manually install Cloud Pak for Integration in this way can find instructions in [IBM Documentation here](https://www.ibm.com/docs/en/cloud-paks/cp-integration/2021.1?topic=installing){:external}.
 
