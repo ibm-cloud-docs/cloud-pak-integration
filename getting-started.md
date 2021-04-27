@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2020
-lastupdated: "2020-10-09"
+  years: 2019, 2021
+lastupdated: "2021-04-14"
 
 keywords: getting started tutorial, getting started, Cloud Pak for Integration, integration
 
@@ -46,7 +46,7 @@ Before you can install the Cloud Pak on {{site.data.keyword.cloud}}, you must se
 
 The smallest cluster size that should be created to run CP4I is 1 worker with 32 vCPUs & 128GB memory.  This will give you enough capacity to run Cloud Pak for Integration Common Services, Platform Navigator and a few small capabilities.  For full details on the minimum required resources to run capabilities, see the [Cloud Pak for Integration Readme](https://cloud.ibm.com/catalog/content/ibm-cp-integration#about){: external}.
 
-Installation of Cloud Pak for Integration on IBM Cloud using the IBM software catalog does not support MZR clusters. It uses block storage that can't be accessed from multiple zones, and file storage that doesn't bind to an MZR cluster when the demoPreparation parameter is set to true.
+Installation of Cloud Pak for Integration on IBM Cloud using the IBM software catalog does not support MZR clusters. See [Known limitations](#known-limitations) for more details.
 
 ## Step 1. Obtain a license
 {: step1}
@@ -107,5 +107,17 @@ The full URL will then resemble "https://(project-name)-navigator-pn.(cluster-na
 
 The Platform Navigator home page offers the ability to create instances of the various components.
 
-See the full documentation at the [Knowledge Center](https://www.ibm.com/support/knowledgecenter/SSGT7J_20.3/welcome.html){: external}.  See **Capability deployment.**
+See the full documentation in [IBM Documentation](https://www.ibm.com/support/knowledgecenter/SSGT7J_20.3/welcome.html){: external}.  See **Capability deployment.**
+
+
+## Known limitations
+{: known-limitations}
+
+The IBM Cloud software catalog installer for Cloud Pak for Integration does not support;
+- Multi-zone region (MZR) clusters in IBM Cloud Classic infrastructure
+- Clusters deployed in IBM Cloud VPC, in either single zone or multi-zone topologies
+
+This restriction is because those environments do not natively provide the replicated File storage that is required to deploy Cloud Pak for Integration in a resilient fashion.
+
+**Installation into MZR Classic clusters and IBM Cloud VPC is supported by manual installation of Cloud Pak for Integration** (i.e. not using the software catalog installer) which enables the user to specify your choice of replicated storage provider that has been separately made available for use in the cluster, such as Portworx. Customers wishing to manually install Cloud Pak for Integration in this way can find instructions in [IBM Documentation here](https://www.ibm.com/docs/en/cloud-paks/cp-integration/2021.1?topic=installing){:external}.
 
