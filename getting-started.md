@@ -42,7 +42,10 @@ IBM Cloud Pak for Integration includes the following components.
 
 
 ## Before you begin
-Before you can install the Cloud Pak on {{site.data.keyword.cloud}}, you must set up a [Red Hat OpenShift Cluster](https://cloud.ibm.com/kubernetes/catalog/openshiftcluster){: external}.
+
+This documentation applies to installing the Cloud Pak on managed Red Hat OpenShift clusters provided by {{site.data.keyword.cloud}} only. For more information about other methods of installation, see [Installation Options](https://www.ibm.com/docs/en/cloud-paks/cp-integration/latest?topic=installing-installation-options).
+
+Before you can install the Cloud Pak on {{site.data.keyword.cloud}}, you must set up a Red Hat OpenShift cluster using the [Red Hat OpenShift on IBM Cloud](https://cloud.ibm.com/kubernetes/catalog/openshiftcluster){: external} service.
 
 The smallest cluster size that should be created to run CP4I is 1 worker with 32 vCPUs & 128GB memory.  This will give you enough capacity to run Cloud Pak for Integration Common Services, Platform Navigator and a few small capabilities.  For full details on the minimum required resources to run capabilities, see the [Cloud Pak for Integration Readme](https://cloud.ibm.com/catalog/content/ibm-cp-integration#about){: external}.
 
@@ -77,15 +80,17 @@ Select the target OpenShift Cluster. You can filter the table by entering the na
 
 In the Project field, select from an existing project or create a new one by entering a unique project name. A project is a Kubernetes cluster namespace, and the list is populated from your Red Hat OpenShift environment.  This project name is used as the namespace for the Platform Navigator.
 
-## Step 4. Configure your workspace
+## Step 4. Configure your schematics workspace
 {: step4}
 
-Enter a name for the workspace.  A suggested name is provided.  You can change this value.
+IBM Cloud Paks use the [Schematics](https://www.ibm.com/cloud/schematics){: external} service on {{site.data.keyword.cloud}} to automate the installation. The automation runs in a schematics workspace. A suggested name is provided for this workspace. The schematics workspace is only used during the installation process.
 
 ## Step 5. Set the deployment values
 {: step5}
 
-You must enter a value for the **csDefaultAdminPassword**.  Do not lose this value.
+You must enter a value for the **csDefaultAdminPassword**.  Do not lose this value, you will need it to log into the Platform Navigator.
+
+The password should be at least 32 characters, and can only include letters, numbers, and `-`.
 
 ## Step 6. Install
 {: step6}
