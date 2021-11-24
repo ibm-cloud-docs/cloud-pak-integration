@@ -23,7 +23,7 @@ subcollection: cloud-pak-integration
 {: #trial}
 
 This page will guide you through signing up for the IBM Cloud Pak for Integration trial and point you to the getting started page where you can use that trial license with a managed Red Hat OpenShift Cluster on IBM Cloud.  
-{:shortdesc}
+{: shortdesc}
 
 If you have already signed up for the trial and landed on this page then you can skip to [Step 2. Using your 60-day subscription trial key](#step2).
 

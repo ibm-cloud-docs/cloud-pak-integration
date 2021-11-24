@@ -23,25 +23,26 @@ subcollection: cloud-pak-integration
 {: #getting-started}
 
 Every enterprise in today's markets must offer robust digital products and services, often requiring integration of complex capabilities and systems to deliver one coherent whole. IBM® Cloud Pak for Integration offers a simplified solution to this integration challenge, allowing the enterprise to modernize its processes while positioning itself for future innovation. Once installed, IBM Cloud Pak for Integration eases monitoring, maintenance and upgrades, helping the enterprise stay ahead of the innovation curve.
-{:shortdesc}
+{: shortdesc}
 
 ## What's inside this Cloud Pak
 {: #whatsinside}
 
 IBM Cloud Pak for Integration includes the following components.
 
-  - Platform Navigator - Get centralized management and control of all Cloud Pak for Integration components with this integration-specific user interface.
-  - Asset Repository - Achieve accelerated development through reuse of integration assets across capabilities.
-  - [Common Services](https://www.ibm.com/support/knowledgecenter/SSHKN6/kc_welcome_cs.html){: external} - Get logging, metering, monitoring and many other key foundational services with IBM Common Services, a set of private cloud platform services that provide the benefits of the public cloud from the safety of your firewall-protected data center. Entitlement to IBM Common Services is included in Cloud Pak for Integration to facilitate the transition to OpenShift.
-  - [API Connect](https://www.ibm.com/support/knowledgecenter/en/SSMNED_2018/mapfiles/getting_started.html){: external} - Create, secure, manage, share and monetize APIs across clouds while you maintain continuous availability. Take control of your API ecosystem and drive digital business with a robust API strategy that can meet the changing needs of your users.
-  - [App Connect Enterprise](https://www.ibm.com/support/knowledgecenter/en/SSTTDS_11.0.0/com.ibm.ace.home.doc/help_home.htm){: external} - Integrate all of your business data and applications more quickly and easily across any cloud, from the simplest SaaS application to the most complex systems — without worrying about mismatched sources, formats or standards.
-  - [MQ Advanced](https://www.ibm.com/support/knowledgecenter/en/SSFKSJ_9.1.0/com.ibm.mq.helphome.v91.doc/WelcomePagev9r1.htm){: external} - Simplify, accelerate and facilitate the reliable exchange of data with a flexible and security-rich messaging solution that’s trusted by some of the world’s most successful enterprises. Ensure you receive the information you need, when you need it — and receive it only once.
-  - [Event Streams](https://ibm.github.io/event-streams/){: external} - Use Apache Kafka to deliver messages more easily and reliably and to react to events in real time. Provide more personalized customer experiences by responding to events before the moment passes.
-  - [DataPower Gateway](https://www.ibm.com/support/knowledgecenter/SS9H2Y_7.7.0/com.ibm.dp.doc/welcome.html){: external} - Create persistent, security-rich connections between your on-premises and cloud environments. Quickly set up and manage gateways, control access on a per-resource basis, configure TLS encryption and mutual authentication, and monitor all of your traffic.
-  - [Aspera High Speed Transfer Server](https://www.ibm.com/blogs/bluemix/2018/12/enable-hybrid-cloud-data-movement-with-aspera-for-ibm-cloud-private/){: external} - Send large files and data sets virtually anywhere, reliably, and at maximum speed. Accelerate collaboration and meet the demands of complex global teams, without compromising performance or security.
+- Platform Navigator - Get centralized management and control of all Cloud Pak for Integration components with this integration-specific user interface.
+- Asset Repository - Achieve accelerated development through reuse of integration assets across capabilities.
+- [Common Services](https://www.ibm.com/support/knowledgecenter/SSHKN6/kc_welcome_cs.html){: external} - Get logging, metering, monitoring and many other key foundational services with IBM Common Services, a set of private cloud platform services that provide the benefits of the public cloud from the safety of your firewall-protected data center. Entitlement to IBM Common Services is included in Cloud Pak for Integration to facilitate the transition to OpenShift.
+- [API Connect](https://www.ibm.com/support/knowledgecenter/en/SSMNED_2018/mapfiles/getting_started.html){: external} - Create, secure, manage, share and monetize APIs across clouds while you maintain continuous availability. Take control of your API ecosystem and drive digital business with a robust API strategy that can meet the changing needs of your users.
+- [App Connect Enterprise](https://www.ibm.com/support/knowledgecenter/en/SSTTDS_11.0.0/com.ibm.ace.home.doc/help_home.htm){: external} - Integrate all of your business data and applications more quickly and easily across any cloud, from the simplest SaaS application to the most complex systems — without worrying about mismatched sources, formats or standards.
+- [MQ Advanced](https://www.ibm.com/support/knowledgecenter/en/SSFKSJ_9.1.0/com.ibm.mq.helphome.v91.doc/WelcomePagev9r1.htm){: external} - Simplify, accelerate and facilitate the reliable exchange of data with a flexible and security-rich messaging solution that’s trusted by some of the world’s most successful enterprises. Ensure you receive the information you need, when you need it — and receive it only once.
+- [Event Streams](https://ibm.github.io/event-streams/){: external} - Use Apache Kafka to deliver messages more easily and reliably and to react to events in real time. Provide more personalized customer experiences by responding to events before the moment passes.
+- [DataPower Gateway](https://www.ibm.com/support/knowledgecenter/SS9H2Y_7.7.0/com.ibm.dp.doc/welcome.html){: external} - Create persistent, security-rich connections between your on-premises and cloud environments. Quickly set up and manage gateways, control access on a per-resource basis, configure TLS encryption and mutual authentication, and monitor all of your traffic.
+- [Aspera High Speed Transfer Server](https://www.ibm.com/blogs/bluemix/2018/12/enable-hybrid-cloud-data-movement-with-aspera-for-ibm-cloud-private/){: external} - Send large files and data sets virtually anywhere, reliably, and at maximum speed. Accelerate collaboration and meet the demands of complex global teams, without compromising performance or security.
 
 
 ## Before you begin
+{: #before}
 
 This documentation applies to installing the Cloud Pak on managed Red Hat OpenShift clusters provided by {{site.data.keyword.cloud}} only. For more information about other methods of installation, see [Installation Options](https://www.ibm.com/docs/en/cloud-paks/cp-integration/latest?topic=installing-installation-options).
 
@@ -56,10 +57,10 @@ Installation of Cloud Pak for Integration on IBM Cloud using the IBM software ca
 
 If you don't already have a license, you can:
 
-  - Purchase a license through [IBM Passport Advantage](https://www.ibm.com/software/passportadvantage/index.html){: external}
-  - [Register](https://www.ibm.com/account/reg/signup?formid=urx-46640){: external} for a 60-day trial license of IBM Cloud Pak for Integration
+- Purchase a license through [IBM Passport Advantage](https://www.ibm.com/software/passportadvantage/index.html){: external}
+- [Register](https://www.ibm.com/account/reg/signup?formid=urx-46640){: external} for a 60-day trial license of IBM Cloud Pak for Integration
 
-    **Important**: The trial is for IBM Cloud Pak for Integration software only. The trial does not include entitlement to the Red Hat OpenShift Container Platform.
+  **Important**: The trial is for IBM Cloud Pak for Integration software only. The trial does not include entitlement to the Red Hat OpenShift Container Platform.
 
 ## Step 2. Assign a license
 {: step2}
@@ -101,6 +102,7 @@ The namespace you use for installation of the Platform Navigator should match th
 
 
 ## Next steps
+{: #next}
 
 Once the installation completes, click **Offering Dashboard** to open the Platform Navigator.
 
@@ -124,5 +126,5 @@ The IBM Cloud software catalog installer for Cloud Pak for Integration does not 
 
 This restriction is because those environments do not natively provide the replicated File storage that is required to deploy Cloud Pak for Integration in a resilient fashion.
 
-**Installation into MZR Classic clusters and IBM Cloud VPC is supported by manual installation of Cloud Pak for Integration** (i.e. not using the software catalog installer) which enables the user to specify your choice of replicated storage provider that has been separately made available for use in the cluster, such as Portworx. Customers wishing to manually install Cloud Pak for Integration in this way can find instructions in [IBM Documentation here](https://www.ibm.com/docs/en/cloud-paks/cp-integration/2021.1?topic=installing){:external}.
+**Installation into MZR Classic clusters and IBM Cloud VPC is supported by manual installation of Cloud Pak for Integration** (i.e. not using the software catalog installer) which enables the user to specify your choice of replicated storage provider that has been separately made available for use in the cluster, such as Portworx. Customers wishing to manually install Cloud Pak for Integration in this way can find instructions in [IBM Documentation here](https://www.ibm.com/docs/en/cloud-paks/cp-integration/2021.1?topic=installing){: external}.
 
