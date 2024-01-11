@@ -115,9 +115,9 @@ You can also discover the host URL for the Platform UI with the following comman
 
 The full URL will then resemble "https://(project-name)-navigator-pn.(cluster-name).(region).containers.appdomain.cloud".
 
-The Platform UI home page offers the ability to create instances.
+The Platform UI home page offers the ability to create instances. For more information on deploying instances, see [Deploying instances](https://www.ibm.com/docs/en/cloud-paks/cp-integration/2023.4?topic=installing-deploying-instances){: external}.
 
-See the full documentation in [IBM Documentation](https://www.ibm.com/docs/en/cloud-paks/cp-integration){: external}.  See **Deploying instances.**
+For the full product documentation, see [IBM Cloud Pak for Integration documentation](https://www.ibm.com/docs/en/cloud-paks/cp-integration){: external}.
 
 
 ## Known limitations
