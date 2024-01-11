@@ -82,7 +82,7 @@ Open [Cloud Pak for Integration from the IBM Cloud Catalog](https://cloud.ibm.co
 
 Select the target OpenShift Cluster. You can filter the table by entering the name of the cluster created in the Before you Begin step in the search field.
 
-In the Project field, select from an existing project or create a new one by entering a unique project name. A project is a Kubernetes cluster namespace, and the list is populated from your Red Hat OpenShift environment.  This project name is used as the namespace for the Platform Navigator.
+In the Project field, select from an existing project or create a new one by entering a unique project name. A project is a Kubernetes cluster namespace, and the list is populated from your Red Hat OpenShift environment.  This project name is used as the namespace for the Platform UI.
 
 ## Step 4. Configure your schematics workspace
 {: step4}
@@ -92,7 +92,7 @@ IBM Cloud Paks use the [Schematics](https://www.ibm.com/cloud/schematics){: exte
 ## Step 5. Set the deployment values
 {: step5}
 
-You must enter a value for the **csDefaultAdminPassword**.  Do not lose this value, you will need it to log into the Platform Navigator.
+You must enter a value for the **csDefaultAdminPassword**.  Do not lose this value, you will need it to log into the Platform UI.
 
 The password should be at least 32 characters, and can only include letters, numbers, and `-`.
 
