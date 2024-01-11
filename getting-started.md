@@ -28,10 +28,7 @@ Every enterprise in today's markets must offer robust digital products and servi
 ## What's inside this Cloud Pak
 {: #whatsinside}
 
-IBM Cloud Pak for Integration includes the following components.
-
-
-Cloud Pak for Integration offers:
+IBM Cloud Pak for Integration includes the following components:
 
 - Platform UI - Design, deploy, and manage instances while easily navigating between them.
 - Automation assets - Store, manage, and retrieve integration assets.
