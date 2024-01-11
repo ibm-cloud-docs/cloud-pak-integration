@@ -51,7 +51,7 @@ This documentation applies to installing the Cloud Pak on managed Red Hat OpenSh
 
 Before you can install the Cloud Pak on {{site.data.keyword.cloud}}, you must set up a Red Hat OpenShift cluster using the [Red Hat OpenShift on IBM Cloud](https://cloud.ibm.com/kubernetes/catalog/openshiftcluster){: external} service.
 
-For full details on the minimum required resources to run instances, see the [Cloud Pak for Integration Readme](https://cloud.ibm.com/catalog/content/ibm-cp-integration#about){: external}.
+For full details on the minimum required resources to deploy instances, see the [Compute resources for development environments](https://www.ibm.com/docs/en/cloud-paks/cp-integration/latest?topic=requirements-compute-resources-development-environments){: external} and the [Cloud Pak for Integration Readme](https://cloud.ibm.com/catalog/content/ibm-cp-integration#about){: external}.
 
 Installation of Cloud Pak for Integration on IBM Cloud using the IBM software catalog does not support MZR clusters. See [Known limitations](#known-limitations) for more details.
 
