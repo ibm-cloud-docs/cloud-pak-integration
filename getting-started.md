@@ -30,25 +30,31 @@ Every enterprise in today's markets must offer robust digital products and servi
 
 IBM Cloud Pak for Integration includes the following components.
 
-- Platform Navigator - Get centralized management and control of all Cloud Pak for Integration components with this integration-specific user interface.
-- Asset Repository - Achieve accelerated development through reuse of integration assets across capabilities.
-- [Common Services](https://www.ibm.com/support/knowledgecenter/SSHKN6/kc_welcome_cs.html){: external} - Get logging, metering, monitoring and many other key foundational services with IBM Common Services, a set of private cloud platform services that provide the benefits of the public cloud from the safety of your firewall-protected data center. Entitlement to IBM Common Services is included in Cloud Pak for Integration to facilitate the transition to OpenShift.
-- [API Connect](https://www.ibm.com/support/knowledgecenter/en/SSMNED_2018/mapfiles/getting_started.html){: external} - Create, secure, manage, share and monetize APIs across clouds while you maintain continuous availability. Take control of your API ecosystem and drive digital business with a robust API strategy that can meet the changing needs of your users.
-- [App Connect Enterprise](https://www.ibm.com/support/knowledgecenter/en/SSTTDS_11.0.0/com.ibm.ace.home.doc/help_home.htm){: external} - Integrate all of your business data and applications more quickly and easily across any cloud, from the simplest SaaS application to the most complex systems — without worrying about mismatched sources, formats or standards.
-- [MQ Advanced](https://www.ibm.com/support/knowledgecenter/en/SSFKSJ_9.1.0/com.ibm.mq.helphome.v91.doc/WelcomePagev9r1.htm){: external} - Simplify, accelerate and facilitate the reliable exchange of data with a flexible and security-rich messaging solution that’s trusted by some of the world’s most successful enterprises. Ensure you receive the information you need, when you need it — and receive it only once.
-- [Event Streams](https://ibm.github.io/event-streams/){: external} - Use Apache Kafka to deliver messages more easily and reliably and to react to events in real time. Provide more personalized customer experiences by responding to events before the moment passes.
-- [DataPower Gateway](https://www.ibm.com/support/knowledgecenter/SS9H2Y_7.7.0/com.ibm.dp.doc/welcome.html){: external} - Create persistent, security-rich connections between your on-premises and cloud environments. Quickly set up and manage gateways, control access on a per-resource basis, configure TLS encryption and mutual authentication, and monitor all of your traffic.
-- [Aspera High Speed Transfer Server](https://www.ibm.com/blogs/bluemix/2018/12/enable-hybrid-cloud-data-movement-with-aspera-for-ibm-cloud-private/){: external} - Send large files and data sets virtually anywhere, reliably, and at maximum speed. Accelerate collaboration and meet the demands of complex global teams, without compromising performance or security.
+
+Cloud Pak for Integration offers:
+
+- Platform UI - Design, deploy, and manage instances while easily navigating between them.
+- Automation assets - Store, manage, and retrieve integration assets.
+- Integration assemblies - Deploy multiple instances and components from the same YAML file in a simplified way.
+- API management - Manage your APIs with API Connect.
+- Integration design - Create integration flows with App Connect Designer.
+- Integration dashboard - Deploy integration servers with App Connect Dashboard.
+- Messaging - Get robust, reliable messaging services with MQ Advanced.
+- Event Endpoint Management - Describe your application that produces events to Kafka topics as an event source, and socialize the event source details with application developers.
+- Kafka cluster - Stream your Kafka events.
+- Enterprise gateway - Access security, control, and a full range of additional services with DataPower® Gateway.
+- High speed transfer server - Transfer files of any size quickly, reliably, and securely with Aspera® HSTS.
+- IBM Cloud Pak foundational services - Access services for authentication, as well as features for managing users and user profile settings.
 
 
 ## Before you begin
 {: #before}
 
-This documentation applies to installing the Cloud Pak on managed Red Hat OpenShift clusters provided by {{site.data.keyword.cloud}} only. For more information about other methods of installation, see [Installation Options](https://www.ibm.com/docs/en/cloud-paks/cp-integration/latest?topic=installing-installation-options).
+This documentation applies to installing the Cloud Pak on managed Red Hat OpenShift clusters provided by {{site.data.keyword.cloud}} only. For more information about other methods of installation, see [Installing](https://www.ibm.com/docs/en/cloud-paks/cp-integration/latest?topic=installing).
 
 Before you can install the Cloud Pak on {{site.data.keyword.cloud}}, you must set up a Red Hat OpenShift cluster using the [Red Hat OpenShift on IBM Cloud](https://cloud.ibm.com/kubernetes/catalog/openshiftcluster){: external} service.
 
-The smallest cluster size that should be created to run CP4I is 1 worker with 32 vCPUs & 128GB memory.  This will give you enough capacity to run Cloud Pak for Integration Common Services, Platform Navigator and a few small capabilities.  For full details on the minimum required resources to run capabilities, see the [Cloud Pak for Integration Readme](https://cloud.ibm.com/catalog/content/ibm-cp-integration#about){: external}.
+For full details on the minimum required resources to run instances, see the [Cloud Pak for Integration Readme](https://cloud.ibm.com/catalog/content/ibm-cp-integration#about){: external}.
 
 Installation of Cloud Pak for Integration on IBM Cloud using the IBM software catalog does not support MZR clusters. See [Known limitations](#known-limitations) for more details.
 
@@ -98,23 +104,23 @@ The password should be at least 32 characters, and can only include letters, num
 
 Check the box verifying you have read the license agreements.  Click **Install**.
 
-The namespace you use for installation of the Platform Navigator should match the name you set for the project.
+The namespace you use for installation of the Platform UI should match the name you set for the project.
 
 
 ## Next steps
 {: #next}
 
-Once the installation completes, click **Offering Dashboard** to open the Platform Navigator.
+Once the installation completes, click **Offering Dashboard** to open the Platform UI.
 
-You can also discover the host URL for the Platform Navigator with the following command.
+You can also discover the host URL for the Platform UI with the following command.
 
 `oc get route -n ${NAMESPACE} ${NAMESPACE}-navigator-pn -o json | jq -r .spec.host`
 
 The full URL will then resemble "https://(project-name)-navigator-pn.(cluster-name).(region).containers.appdomain.cloud".
 
-The Platform Navigator home page offers the ability to create instances of the various components.
+The Platform UI home page offers the ability to create instances.
 
-See the full documentation in [IBM Documentation](https://www.ibm.com/support/knowledgecenter/SSGT7J_20.3/welcome.html){: external}.  See **Capability deployment.**
+See the full documentation in [IBM Documentation](https://www.ibm.com/docs/en/cloud-paks/cp-integration){: external}.  See **Deploying instances.**
 
 
 ## Known limitations
