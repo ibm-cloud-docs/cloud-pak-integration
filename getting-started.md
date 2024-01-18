@@ -75,7 +75,7 @@ Open the **Create** tab for Cloud Pak for Integration from the [IBM Cloud Catalo
 
       The password must be at least 32 characters long and can include letters, numbers, or dashes (-).
 
-## Step 6. Install
+## Step 4. Install
 {: step6}
 
 Review the information in the **Summary** pane on the right. Read and accept the Cloud Pak for Integration license agreement, then click **Install**.
