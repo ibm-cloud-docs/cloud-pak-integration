@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021
-lastupdated: "2021-01-12"
+  years: 2021, 2024
+lastupdated: "2024-01-26"
 
 keywords: trial, Cloud Pak for Integration, integration
 
@@ -19,30 +19,29 @@ subcollection: cloud-pak-integration
 {:external: target="_blank" .external}
 
 
-# IBM Cloud Pak for Integration Trial
+# IBM Cloud Pak for Integration trial
 {: #trial}
 
-This page will guide you through signing up for the IBM Cloud Pak for Integration trial and point you to the getting started page where you can use that trial license with a managed Red Hat OpenShift Cluster on IBM Cloud.  
+Try IBM Cloud Pak® for Integration with a 60-day subscription trial. Sign-up to the trial to receive a key that you can use to install Cloud Pak for Integration on a managed Red Hat OpenShift Cluster on IBM Cloud. 
 {: shortdesc}
 
-If you have already signed up for the trial and landed on this page then you can skip to [Step 2. Using your 60-day subscription trial key](#step2).
+> **Important**: The trial is for IBM Cloud Pak for Integration software only. The trial does not include entitlement to the Red Hat OpenShift Container Platform.
 
-## Step 1. Signing up for the trial
+## Step 1. Sign up for the trial
 {: #step1}
 
-You can register for a 60-day subscription trial key for IBM Cloud Pak for Integration [here](https://www.ibm.com/account/reg/signup?formid=urx-46640){: external}.
+Enter your details on the [IBM Cloud Pak for Integration](https://www.ibm.com/account/reg/signup?formid=urx-46640){: external} registration page.
 
-As part of the 60-day subscription trial key registration form it will create an IBM ID for you. If you already have an IBM ID then the page will recognise this when you enter your email address or, you can use the **Log in** link at the top of the page.  The email address that you provide will become your IBMid, which you’ll use to log into IBM.com.  If you don’t already have an IBM ID then you will need to fill in the form which asks for your E-mail address, First name, Last name, Password (8 characters minimum. One uppercase character, One lowercase character, One number), Country or region of residence and State or province.  
+- If you have an IBMid, log in to use your existing IBM account. If you do not log in, the form recognizes your email address and redirects you to the log in page.
+- If you do not have an IBMid, the registration process uses the email address that you supply to create one. You can use this ID for other IBM trials, demos, and support features that require an account. For more information, see https://www.ibm.com/account/.
 
-Once you have filled in the form details and clicked **Next** you will be sent a New User Registration verification email with a 7 digit code to the email address that you provided.  Find the email in your inbox (if you don’t see if in your inbox check your junk folder), copy the 7-digit code and paste it into the verification token field and click **Continue**.  The code will expire if not used within 30 minutes.
+When registration is complete, the form redirects you to this page where you can continue to the next step.
 
-Once complete the form will redirect you to this page where you can continue to the next step.
-
-## Step 2. Using your 60-day subscription trial key
+## Step 2. Use your trial key to install Cloud Pak for Integration
 {: #step2}
 
-After signing up for the IBM Cloud Pak for Integration trial an IBM ID will be created for you (if you didn’t already have one) and you will be assigned a container software entitlement key so that you are entitled to use the IBM Cloud Pak for Integration container image.
+The trial registration process assigns a container software entitlement key to you so that you are entitled to use the IBM Cloud Pak for Integration container image.
 
-You can now follow [Getting started with IBM Cloud Pak for Integration](/docs/cloud-pak-integration?topic=cloud-pak-integration-getting-started) to use your trial license with a managed Red Hat OpenShift Cluster on IBM Cloud.  Start at the **Before you begin** step, and because you have already signed up to the IBM Cloud Pak for Integration trial, can skip **Step 1. Obtain a license**.
+Follow the instructions in [Getting started with IBM Cloud Pak for Integration](/docs/cloud-pak-integration?topic=cloud-pak-integration-getting-started) to use your trial license with a managed Red Hat OpenShift Cluster on IBM Cloud. Because you signed up to the IBM Cloud Pak for Integration trial, you can skip **Step 1. Obtain a license**.
 
-> **Note:** You can find your container software entitlement key here - https://myibm.ibm.com/products-services/containerlibrary.  Check out the **View library** tab on the left-hand side of that page to see details and a full list of the container software you own.
+> **Note:** You can find your container software entitlement key in the [ IBM Container Software and Cloud Pak Access Management](https://myibm.ibm.com/products-services/containerlibrary){: external} library. Click **Container software library** in the navigation menu to see details and a full list of the container software that you own.

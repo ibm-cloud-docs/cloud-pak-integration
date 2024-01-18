@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2021
-lastupdated: "2021-04-14"
+  years: 2019, 2024
+lastupdated: "2024-01-26"
 
 keywords: getting started tutorial, getting started, Cloud Pak for Integration, integration
 
@@ -19,115 +19,97 @@ subcollection: cloud-pak-integration
 {:external: target="_blank" .external}
 
 
-# Getting started with IBM Cloud Pak for Integration
+# Getting started with IBM Cloud Pak for Integration on IBM Cloud
 {: #getting-started}
 
-Every enterprise in today's markets must offer robust digital products and services, often requiring integration of complex capabilities and systems to deliver one coherent whole. IBM® Cloud Pak for Integration offers a simplified solution to this integration challenge, allowing the enterprise to modernize its processes while positioning itself for future innovation. Once installed, IBM Cloud Pak for Integration eases monitoring, maintenance and upgrades, helping the enterprise stay ahead of the innovation curve.
+IBM Cloud Pak® for Integration is a comprehensive set of software integration tools within a single, unified experience. With this tool set, you can connect your applications, data, systems, and services, across cloud or on-premises environments, as part of a managed, scalable, and secure deployment that is based on Red Hat OpenShift. You can install Cloud Pak for Integration alongside other IBM Cloud Paks to help you quickly build and modernize applications across any cloud or IT infrastructure.
 {: shortdesc}
 
-## What's inside this Cloud Pak
-{: #whatsinside}
-
-IBM Cloud Pak for Integration includes the following components:
-
-- Platform UI - Design, deploy, and manage instances while easily navigating between them.
-- Automation assets - Store, manage, and retrieve integration assets.
-- Integration assemblies - Deploy multiple instances and components from the same YAML file in a simplified way.
-- API management - Manage your APIs with API Connect.
-- Integration design - Create integration flows with App Connect Designer.
-- Integration dashboard - Deploy integration servers with App Connect Dashboard.
-- Messaging - Get robust, reliable messaging services with MQ Advanced.
-- Event Endpoint Management - Describe your application that produces events to Kafka topics as an event source, and socialize the event source details with application developers.
-- Kafka cluster - Stream your Kafka events.
-- Enterprise gateway - Access security, control, and a full range of additional services with DataPower® Gateway.
-- High speed transfer server - Transfer files of any size quickly, reliably, and securely with Aspera® HSTS.
-- IBM Cloud Pak foundational services - Access services for authentication, as well as features for managing users and user profile settings.
+This product guide covers the installation process and trial license for Cloud Pak for Integration on a managed Red Hat OpenShift cluster that is provided by {{site.data.keyword.cloud}}. For other information, including more information about the product and installation processes for other environments, see the full product documentation in [IBM Documentation](https://www.ibm.com/docs/en/cloud-paks/cp-integration/latest?topic=overview){: external}.
 
 
 ## Before you begin
 {: #before}
 
-This documentation applies to installing the Cloud Pak on managed Red Hat OpenShift clusters provided by {{site.data.keyword.cloud}} only. For more information about other methods of installation, see [Installing](https://www.ibm.com/docs/en/cloud-paks/cp-integration/latest?topic=installing).
+Use this documentation only if you are installing the Cloud Pak on a managed Red Hat OpenShift cluster that is provided by {{site.data.keyword.cloud}}. If you want to install the Cloud Pak in other environments, see [Installing](https://www.ibm.com/docs/en/cloud-paks/cp-integration/latest?topic=installing) in IBM Documentation.
 
-Before you can install the Cloud Pak on {{site.data.keyword.cloud}}, you must set up a Red Hat OpenShift cluster using the [Red Hat OpenShift on IBM Cloud](https://cloud.ibm.com/kubernetes/catalog/openshiftcluster){: external} service.
+Before you can install the Cloud Pak on {{site.data.keyword.cloud}}, you must set up a Red Hat OpenShift cluster by using the [Red Hat OpenShift on IBM Cloud](https://cloud.ibm.com/kubernetes/catalog/openshiftcluster){: external} service.
 
-For full details on the minimum required resources to deploy instances, see the [Compute resources for development environments](https://www.ibm.com/docs/en/cloud-paks/cp-integration/latest?topic=requirements-compute-resources-development-environments){: external} and the [Cloud Pak for Integration Readme](https://cloud.ibm.com/catalog/content/ibm-cp-integration#about){: external}.
+For information about resource requirements, see [Compute resources for development environments](https://www.ibm.com/docs/en/cloud-paks/cp-integration/latest?topic=requirements-compute-resources-development-environments){: external} in IBM Documentation and the **About** tab of the Cloud Pak for Integration entry in the [IBM Cloud catalog](https://cloud.ibm.com/catalog/content/ibm-cp-integration#about){: external}.
 
-Installation of Cloud Pak for Integration on IBM Cloud using the IBM software catalog does not support MZR clusters. See [Known limitations](#known-limitations) for more details.
+The IBM Cloud software catalog installer does not support the installation of Cloud Pak for Integration on MZR clusters. For more information, see [Known limitations](#known-limitations).
 
 ## Step 1. Obtain a license
 {: step1}
 
-If you don't already have a license, you can:
+If you don't already have a license, use one of the following methods to obtain one:
 
 - Purchase a license through [IBM Passport Advantage](https://www.ibm.com/software/passportadvantage/index.html){: external}
 - [Register](https://www.ibm.com/account/reg/signup?formid=urx-46640){: external} for a 60-day trial license of IBM Cloud Pak for Integration
 
-  **Important**: The trial is for IBM Cloud Pak for Integration software only. The trial does not include entitlement to the Red Hat OpenShift Container Platform.
+  > **Important**: The trial is for IBM Cloud Pak for Integration software only. The trial does not include entitlement to the Red Hat OpenShift Container Platform.
 
 ## Step 2. Assign a license
 {: step2}
 
 To assign your license, follow these steps:
 
-1. Sign up to, or log in to your [IBM Cloud account](https://cloud.ibm.com/login){: external}.
-2. Navigate to **Manage > Account** and then click **Licenses and entitlements** in the navigation menu.
-3. If there are no licenses to assign on the Licenses and entitlements page, click **Check IBM Passport Advantage**.
-4. Select the appropriate license and click **Assign**.
+1. Sign up to, or log in to, your [IBM Cloud account](https://cloud.ibm.com/login){: external}.
+2. In the IBM Cloud banner, click **Manage > Account** to open the Account page. 
+3. In the navigation menu, click **Licenses and entitlements** under **Account resources**.
+3. If no licenses are available to assign, click **Check IBM Passport Advantage** to open the **Your licenses** dialog.
+4. Select the appropriate license, then click **Assign**.
 
-## Step 3. Select your cluster
+## Step 3. Configure installation settings
 {: step3}
 
-Open [Cloud Pak for Integration from the IBM Cloud Catalog](https://cloud.ibm.com/catalog/content/ibm-cp-integration).
+Open the **Create** tab for Cloud Pak for Integration from the [IBM Cloud Catalog](https://cloud.ibm.com/catalog/content/ibm-cp-integration). Configure the following settings:
 
-Select the target OpenShift Cluster. You can filter the table by entering the name of the cluster created in the Before you Begin step in the search field.
+  1. In the **Select your cluster** section, select the target Red Hat OpenShift Cluster. You can filter the table by entering the name of the Red Hat OpenShift cluster that you created earlier (see [Before you Begin](#before-you-begin)) in the search field.
 
-In the Project field, select from an existing project or create a new one by entering a unique project name. A project is a Kubernetes cluster namespace, and the list is populated from your Red Hat OpenShift environment.  This project name is used as the namespace for the Platform UI.
+  2. In the **Select a project** section, select an existing project, or create a new one by entering a unique project name. A project is a Kubernetes cluster namespace, and the list is populated from your Red Hat OpenShift environment. This project name is used as the namespace for the Platform UI.
 
-## Step 4. Configure your schematics workspace
-{: step4}
+  3. In the **Configure your workspace** section, accept the default settings. IBM Cloud Paks use a Schematics workspace to automate the installation. This workspace is used only during the installation process.
 
-IBM Cloud Paks use the [Schematics](https://www.ibm.com/cloud/schematics){: external} service on {{site.data.keyword.cloud}} to automate the installation. The automation runs in a schematics workspace. A suggested name is provided for this workspace. The schematics workspace is only used during the installation process.
+  4. In the **Set the input variables** section, set the default administrator password by updating the `csDefaultAdminPassword` parameter. Either select from an existing secret or enter a new password. Do not lose this value; you need it to log in to the Platform UI.
 
-## Step 5. Set the deployment values
-{: step5}
-
-You must enter a value for the **csDefaultAdminPassword**.  Do not lose this value, you will need it to log into the Platform UI.
-
-The password should be at least 32 characters, and can only include letters, numbers, and `-`.
+      The password must be at least 32 characters long and can include letters, numbers, or dashes (-).
 
 ## Step 6. Install
 {: step6}
 
-Check the box verifying you have read the license agreements.  Click **Install**.
-
-The namespace you use for installation of the Platform UI should match the name you set for the project.
+Review the information in the **Summary** pane on the right. Read and accept the Cloud Pak for Integration license agreement, then click **Install**.
 
 
 ## Next steps
 {: #next}
 
-Once the installation completes, click **Offering Dashboard** to open the Platform UI.
+After the installation completes, click **Offering Dashboard** to open the Platform UI.
 
-You can also discover the host URL for the Platform UI with the following command.
+You can also find the host URL for the Platform UI by running the following command:
 
-`oc get route -n ${NAMESPACE} ${NAMESPACE}-navigator-pn -o json | jq -r .spec.host`
+```
+oc get route -n ${NAMESPACE} ${NAMESPACE}-navigator-pn -o json | jq -r .spec.host
+```
 
-The full URL will then resemble "https://(project-name)-navigator-pn.(cluster-name).(region).containers.appdomain.cloud".
+The URL has the following format:
 
-The Platform UI home page offers the ability to create instances. For more information on deploying instances, see [Deploying instances](https://www.ibm.com/docs/en/cloud-paks/cp-integration/2023.4?topic=installing-deploying-instances){: external}.
+```
+https://<project-name>-navigator-pn.<cluster-name>.<region>.containers.appdomain.cloud
+```
 
-For the full product documentation, see [IBM Cloud Pak for Integration documentation](https://www.ibm.com/docs/en/cloud-paks/cp-integration){: external}.
+From the Platform UI home page you can view, manage, and create instances of Cloud Pak for Integration components and services. For information about deploying instances, see [Deploying instances](https://www.ibm.com/docs/en/cloud-paks/cp-integration/2023.4?topic=installing-deploying-instances){: external} in IBM Documentation.
 
 
 ## Known limitations
 {: known-limitations}
 
-The IBM Cloud software catalog installer for Cloud Pak for Integration does not support;
+The IBM Cloud software catalog installer for Cloud Pak for Integration does not support installation in the following environments:
+
 - Multi-zone region (MZR) clusters in IBM Cloud Classic infrastructure
-- Clusters deployed in IBM Cloud VPC, in either single zone or multi-zone topologies
+- Clusters that are deployed in IBM Cloud VPC, in either single-zone or multi-zone topologies
 
-This restriction is because those environments do not natively provide the replicated File storage that is required to deploy Cloud Pak for Integration in a resilient fashion.
+These environments do not provide the replicated file storage that is required to deploy Cloud Pak for Integration in a resilient way. 
 
-**Installation into MZR Classic clusters and IBM Cloud VPC is supported by manual installation of Cloud Pak for Integration** (i.e. not using the software catalog installer) which enables the user to specify your choice of replicated storage provider that has been separately made available for use in the cluster, such as Portworx. Customers wishing to manually install Cloud Pak for Integration in this way can find instructions in [IBM Documentation here](https://www.ibm.com/docs/en/cloud-paks/cp-integration/2021.1?topic=installing){: external}.
+You can install into these environments by following a manual installation process instead. During manual installation, you can specify appropriate storage from a replicated file storage provider such as Portworx. For more information, see [Storage considerations](https://www.ibm.com/docs/en/cloud-paks/cp-integration/latest?topic=requirements-storage-considerations){: external} in IBM Documentation.
 
