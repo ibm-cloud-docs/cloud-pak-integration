@@ -40,8 +40,8 @@ When registration is complete, the form redirects you to this page where you can
 ## Step 2. Use your trial key to install Cloud Pak for Integration
 {: #step2}
 
-The trial registration process assigns a container software entitlement key to you so that you are entitled to use the IBM Cloud Pak for Integration container image.
+The trial registration process assigns a container software entitlement key to you so that you are entitled to use the IBM Cloud Pak for Integration container images.
 
 Follow the instructions in [Getting started with IBM Cloud Pak for Integration](/docs/cloud-pak-integration?topic=cloud-pak-integration-getting-started) to use your trial license with a managed Red Hat OpenShift Cluster on IBM Cloud. Because you signed up to the IBM Cloud Pak for Integration trial, you can skip **Step 1. Obtain a license**.
 
-> **Note:** You can find your container software entitlement key in the [ IBM Container Software and Cloud Pak Access Management](https://myibm.ibm.com/products-services/containerlibrary){: external} library. Click **Container software library** in the navigation menu to see details and a full list of the container software that you own.
+> **Note:** You can find your container software entitlement key in the [IBM Container Software and Cloud Pak Access Management](https://myibm.ibm.com/products-services/containerlibrary){: external} library. Click **Container software library** in the navigation menu to see details and a full list of the container software that you own.

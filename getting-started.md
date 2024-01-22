@@ -35,9 +35,7 @@ Use this documentation only if you are installing the Cloud Pak on a managed Red
 
 Before you can install the Cloud Pak on {{site.data.keyword.cloud}}, you must set up a Red Hat OpenShift cluster by using the [Red Hat OpenShift on IBM Cloud](https://cloud.ibm.com/kubernetes/catalog/openshiftcluster){: external} service.
 
-For information about resource requirements, see [Compute resources for development environments](https://www.ibm.com/docs/en/cloud-paks/cp-integration/latest?topic=requirements-compute-resources-development-environments){: external} in IBM Documentation and the **About** tab of the Cloud Pak for Integration entry in the [IBM Cloud catalog](https://cloud.ibm.com/catalog/content/ibm-cp-integration#about){: external}.
-
-The IBM Cloud software catalog installer does not support the installation of Cloud Pak for Integration on MZR clusters. For more information, see [Known limitations](#known-limitations).
+For information about resource requirements, see [Compute resources for development environments](https://www.ibm.com/docs/en/cloud-paks/cp-integration/latest?topic=requirements-compute-resources-development-environments){: external} in IBM Documentation.
 
 ## Step 1. Obtain a license
 {: step1}
@@ -78,7 +76,7 @@ Open the **Create** tab for Cloud Pak for Integration from the [IBM Cloud Catalo
 ## Step 4. Install
 {: step6}
 
-Review the information in the **Summary** pane on the right. Read and accept the Cloud Pak for Integration license agreement, then click **Install**.
+Review the information in the **Summary** pane. Read and accept the Cloud Pak for Integration license agreement, then click **Install**.
 
 
 ## Next steps
@@ -89,27 +87,7 @@ After the installation completes, click **Offering Dashboard** to open the Platf
 You can also find the host URL for the Platform UI by running the following command:
 
 ```
-oc get route -n ${NAMESPACE} ${NAMESPACE}-navigator-pn -o json | jq -r .spec.host
+oc get consolelink | grep "IBM Cloud Pak for Integration"
 ```
 
-The URL has the following format:
-
-```
-https://<project-name>-navigator-pn.<cluster-name>.<region>.containers.appdomain.cloud
-```
-
-From the Platform UI home page you can view, manage, and create instances of Cloud Pak for Integration components and services. For information about deploying instances, see [Deploying instances](https://www.ibm.com/docs/en/cloud-paks/cp-integration/2023.4?topic=installing-deploying-instances){: external} in IBM Documentation.
-
-
-## Known limitations
-{: known-limitations}
-
-The IBM Cloud software catalog installer for Cloud Pak for Integration does not support installation in the following environments:
-
-- Multi-zone region (MZR) clusters in IBM Cloud Classic infrastructure
-- Clusters that are deployed in IBM Cloud VPC, in either single-zone or multi-zone topologies
-
-These environments do not provide the replicated file storage that is required to deploy Cloud Pak for Integration in a resilient way. 
-
-You can install into these environments by following a manual installation process instead. During manual installation, you can specify appropriate storage from a replicated file storage provider such as Portworx. For more information, see [Storage considerations](https://www.ibm.com/docs/en/cloud-paks/cp-integration/latest?topic=requirements-storage-considerations){: external} in IBM Documentation.
-
+Use the Platform UI to create integrations. For more information, see [Deploying instances](https://www.ibm.com/docs/en/cloud-paks/cp-integration/latest?topic=installing-deploying-instances){: external} and [Building integrations](https://www.ibm.com/docs/en/cloud-paks/cp-integration/latest?topic=building-integrations){: external} in IBM Documentation.
