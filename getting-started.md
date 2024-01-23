@@ -82,12 +82,21 @@ Review the information in the **Summary** pane. Read and accept the Cloud Pak fo
 ## Next steps
 {: #next}
 
-After the installation completes, click **Offering Dashboard** to open the Platform UI.
+1. After the installation completes, click **Offering Dashboard** to open the Platform UI. You can also find the host URL for the Platform UI by running the following command:
 
-You can also find the host URL for the Platform UI by running the following command:
+    ```
+    oc get consolelink | grep "IBM Cloud Pak for Integration"
+    ```
 
-```
-oc get consolelink | grep "IBM Cloud Pak for Integration"
-```
+2. The Platform UI requires a username and password to access. The installation process creates temporary values for you. To find these values, run the following commands:
 
-Use the Platform UI to create integrations. For more information, see [Deploying instances](https://www.ibm.com/docs/en/cloud-paks/cp-integration/latest?topic=installing-deploying-instances){: external} and [Building integrations](https://www.ibm.com/docs/en/cloud-paks/cp-integration/latest?topic=building-integrations){: external} in IBM Documentation.
+    - Username: 
+      ```
+      oc get secret integration-admin-initial-temporary-credentials -n navigator-ns -o jsonpath='{.data.username}' | base64 --decode
+      ```
+    - Password:
+      ```
+      oc get secret integration-admin-initial-temporary-credentials -n navigator-ns -o jsonpath='{.data.password}' | base64 --decode
+      ```
+
+3. Use the Platform UI to create integrations. For more information, see [Deploying instances](https://www.ibm.com/docs/en/cloud-paks/cp-integration/latest?topic=installing-deploying-instances){: external} and [Building integrations](https://www.ibm.com/docs/en/cloud-paks/cp-integration/latest?topic=building-integrations){: external} in IBM Documentation.
