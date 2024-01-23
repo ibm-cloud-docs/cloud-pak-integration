@@ -69,9 +69,6 @@ Open the **Create** tab for Cloud Pak for Integration from the [IBM Cloud Catalo
 
   3. In the **Configure your workspace** section, accept the default settings. IBM Cloud Paks use a Schematics workspace to automate the installation. This workspace is used only during the installation process.
 
-  4. In the **Set the input variables** section, set the default administrator password by updating the `csDefaultAdminPassword` parameter. Either select from an existing secret or enter a new password. Do not lose this value; you need it to log in to the Platform UI.
-
-      The password must be at least 32 characters long and can include letters, numbers, or dashes (-).
 
 ## Step 4. Install
 {: step6}
