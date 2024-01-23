@@ -85,15 +85,15 @@ Review the information in the **Summary** pane. Read and accept the Cloud Pak fo
     oc get consolelink | grep "IBM Cloud Pak for Integration"
     ```
 
-2. The Platform UI requires a username and password to access. The installation process creates temporary values for you. To find these values, run the following commands:
+2. The Platform UI requires a username and password to access. The installation process creates temporary values for you. To find these values, run the following commands, where `<namespace>` is the project name that you specified in the installation settings:
 
     - Username: 
       ```
-      oc get secret integration-admin-initial-temporary-credentials -n navigator-ns -o jsonpath='{.data.username}' | base64 --decode
+      oc get secret integration-admin-initial-temporary-credentials -n <namespace> -o jsonpath='{.data.username}' | base64 --decode
       ```
     - Password:
       ```
-      oc get secret integration-admin-initial-temporary-credentials -n navigator-ns -o jsonpath='{.data.password}' | base64 --decode
+      oc get secret integration-admin-initial-temporary-credentials -n <namespace> -o jsonpath='{.data.password}' | base64 --decode
       ```
 
 3. Use the Platform UI to create integrations. For more information, see [Deploying instances](https://www.ibm.com/docs/en/cloud-paks/cp-integration/latest?topic=installing-deploying-instances){: external} and [Building integrations](https://www.ibm.com/docs/en/cloud-paks/cp-integration/latest?topic=building-integrations){: external} in IBM Documentation.
