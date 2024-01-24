@@ -31,24 +31,24 @@ This product guide covers the installation process and trial license for Cloud P
 ## Before you begin
 {: #before}
 
-Use this documentation only if you are installing the Cloud Pak on a managed Red Hat OpenShift cluster that is provided by {{site.data.keyword.cloud}}. If you want to install the Cloud Pak in other environments, see [Installing](https://www.ibm.com/docs/en/cloud-paks/cp-integration/latest?topic=installing) in IBM Documentation.
+Use this documentation only if you are installing the Cloud Pak on a managed Red Hat OpenShift cluster that is provided by {{site.data.keyword.cloud}}. If you want to install the Cloud Pak in other environments, see [Installing](https://www.ibm.com/docs/en/cloud-paks/cp-integration/latest?topic=installing){: external} in IBM Documentation.
 
-Before you can install the Cloud Pak on {{site.data.keyword.cloud}}, you must set up a Red Hat OpenShift cluster by using the [Red Hat OpenShift on IBM Cloud](https://cloud.ibm.com/kubernetes/catalog/openshiftcluster){: external} service.
+Before you can install the Cloud Pak on {{site.data.keyword.cloud}}, you must set up a Red Hat OpenShift cluster by using the [Red Hat OpenShift on IBM Cloud](https://cloud.ibm.com/kubernetes/catalog/about?platformType=openshift){: external} service.
 
 For information about resource requirements, see [Compute resources for development environments](https://www.ibm.com/docs/en/cloud-paks/cp-integration/latest?topic=requirements-compute-resources-development-environments){: external} in IBM Documentation.
 
 ## Step 1. Obtain a license
-{: step1}
+{: #step1}
 
 If you don't already have a license, use one of the following methods to obtain one:
 
 - Purchase a license through [IBM Passport Advantage](https://www.ibm.com/software/passportadvantage/index.html){: external}
 - [Register](https://www.ibm.com/account/reg/signup?formid=urx-46640){: external} for a 60-day trial license of IBM Cloud Pak for Integration
 
-  > **Important**: The trial is for IBM Cloud Pak for Integration software only. The trial does not include entitlement to the Red Hat OpenShift Container Platform.
+    > **Important**: The trial is for IBM Cloud Pak for Integration software only. The trial does not include entitlement to the Red Hat OpenShift Container Platform.
 
 ## Step 2. Assign a license
-{: step2}
+{: #step2}
 
 To assign your license, follow these steps:
 
@@ -59,19 +59,21 @@ To assign your license, follow these steps:
 4. Select the appropriate license, then click **Assign**.
 
 ## Step 3. Configure installation settings
-{: step3}
+{: #step3}
 
-Open the **Create** tab for Cloud Pak for Integration from the [IBM Cloud Catalog](https://cloud.ibm.com/catalog/content/ibm-cp-integration). Configure the following settings:
+Open Cloud Pak for Integration from the [IBM Cloud Catalog](https://cloud.ibm.com/catalog/content/ibm-cp-integration){: external} then log in with your IBM Cloud account.
 
-  1. In the **Select your cluster** section, select the target Red Hat OpenShift Cluster. You can filter the table by entering the name of the Red Hat OpenShift cluster that you created earlier (see [Before you Begin](#before-you-begin)) in the search field.
+In the **Create** tab, configure the following settings:
 
-  2. In the **Select a project** section, select an existing project, or create a new one by entering a unique project name. A project is a Kubernetes cluster namespace, and the list is populated from your Red Hat OpenShift environment. This project name is used as the namespace for the Platform UI.
+1. In the **Select your cluster** section, select the target Red Hat OpenShift Cluster. You can filter the table by entering the name of the Red Hat OpenShift cluster that you created earlier (see [Before you Begin](#before-you-begin)) in the search field.
 
-  3. In the **Configure your workspace** section, accept the default settings. IBM Cloud Paks use a Schematics workspace to automate the installation. This workspace is used only during the installation process.
+2. In the **Select a project** section, select an existing project, or create a new one by entering a unique project name. A project is a Kubernetes cluster namespace, and the list is populated from your Red Hat OpenShift environment. This project name is used as the namespace for the Platform UI.
+
+3. In the **Configure your workspace** section, accept the default settings. IBM Cloud Paks use a Schematics workspace to automate the installation. This workspace is used only during the installation process.
 
 
 ## Step 4. Install
-{: step6}
+{: #step4}
 
 Review the information in the **Summary** pane. Read and accept the Cloud Pak for Integration license agreement, then click **Install**.
 
@@ -84,6 +86,7 @@ Review the information in the **Summary** pane. Read and accept the Cloud Pak fo
     ```
     oc get consolelink | grep "IBM Cloud Pak for Integration"
     ```
+    {: pre}
 
 2. The Platform UI requires a username and password to access. The installation process creates temporary values for you. To find these values, run the following commands, where `<namespace>` is the project name that you specified in the installation settings:
 
@@ -91,9 +94,11 @@ Review the information in the **Summary** pane. Read and accept the Cloud Pak fo
       ```
       oc get secret integration-admin-initial-temporary-credentials -n <namespace> -o jsonpath='{.data.username}' | base64 --decode
       ```
+      {: pre}
     - Password:
       ```
       oc get secret integration-admin-initial-temporary-credentials -n <namespace> -o jsonpath='{.data.password}' | base64 --decode
       ```
+      {: pre}
 
 3. Use the Platform UI to create integrations. For more information, see [Deploying instances](https://www.ibm.com/docs/en/cloud-paks/cp-integration/latest?topic=installing-deploying-instances){: external} and [Building integrations](https://www.ibm.com/docs/en/cloud-paks/cp-integration/latest?topic=building-integrations){: external} in IBM Documentation.
