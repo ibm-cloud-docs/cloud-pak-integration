@@ -114,6 +114,6 @@ The IBM Cloud software catalog installer for Cloud Pak for Integration does not 
 - Multi-zone region (MZR) clusters in IBM Cloud Classic infrastructure
 - Clusters that are deployed in IBM Cloud VPC, in either single-zone or multi-zone topologies
 
-These environments do not provide the replicated file storage that is required to deploy Cloud Pak for Integration in a resilient way. 
+These environments do not provide the storage that is required to deploy Cloud Pak for Integration in a resilient way. 
 
-You can install into these environments by following a manual installation process instead. During manual installation, you can specify appropriate storage from a replicated file storage provider such as Portworx. For more information, see [Storage considerations](https://www.ibm.com/docs/en/cloud-paks/cp-integration/latest?topic=requirements-storage-considerations){: external} in IBM 
+You can install into these environments by following a manual installation process instead. During manual installation, you can specify appropriate storage. For more information, see [Storage considerations](https://www.ibm.com/docs/en/cloud-paks/cp-integration/latest?topic=requirements-storage-considerations){: external} in IBM 
