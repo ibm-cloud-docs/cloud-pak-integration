@@ -85,7 +85,7 @@ Review the information in the **Summary** pane. Read and accept the Cloud Pak fo
 
 1. After the installation completes, click **Offering Dashboard** to open the Platform UI. You can also find the host URL for the Platform UI by running the following command:
 
-    ```
+    ```shell
     oc get consolelink | grep "IBM Cloud Pak for Integration"
     ```
     {: pre}
@@ -93,13 +93,13 @@ Review the information in the **Summary** pane. Read and accept the Cloud Pak fo
 2. The Platform UI requires a username and password to access. The installation process creates temporary values for you. To find these values, run the following commands, where `<namespace>` is the project name that you specified in the installation settings:
 
     - Username: 
-      ```
+      ```shell
       oc get secret integration-admin-initial-temporary-credentials -n <namespace> -o jsonpath='{.data.username}' | base64 --decode
       ```
       {: pre}
 
     - Password:
-      ```
+      ```shell
       oc get secret integration-admin-initial-temporary-credentials -n <namespace> -o jsonpath='{.data.password}' | base64 --decode
       ```
       {: pre}
