@@ -37,6 +37,8 @@ Before you can install the Cloud Pak on {{site.data.keyword.cloud}}, you must se
 
 For information about resource requirements, see [Compute resources for development environments](https://www.ibm.com/docs/en/cloud-paks/cp-integration/latest?topic=requirements-compute-resources-development-environments){: external} in IBM Documentation.
 
+The IBM Cloud software catalog installer does not support the installation of Cloud Pak for Integration on MZR clusters. For more information, see [Known limitations](#known-limitations).
+
 ## Step 1. Obtain a license
 {: #step1}
 
@@ -83,7 +85,7 @@ Review the information in the **Summary** pane. Read and accept the Cloud Pak fo
 
 1. After the installation completes, click **Offering Dashboard** to open the Platform UI. You can also find the host URL for the Platform UI by running the following command:
 
-    ```
+    ```shell
     oc get consolelink | grep "IBM Cloud Pak for Integration"
     ```
     {: pre}
@@ -91,14 +93,27 @@ Review the information in the **Summary** pane. Read and accept the Cloud Pak fo
 2. The Platform UI requires a username and password to access. The installation process creates temporary values for you. To find these values, run the following commands, where `<namespace>` is the project name that you specified in the installation settings:
 
     - Username: 
-      ```
+      ```shell
       oc get secret integration-admin-initial-temporary-credentials -n <namespace> -o jsonpath='{.data.username}' | base64 --decode
       ```
       {: pre}
+
     - Password:
-      ```
+      ```shell
       oc get secret integration-admin-initial-temporary-credentials -n <namespace> -o jsonpath='{.data.password}' | base64 --decode
       ```
       {: pre}
 
 3. Use the Platform UI to create integrations. For more information, see [Deploying instances](https://www.ibm.com/docs/en/cloud-paks/cp-integration/latest?topic=installing-deploying-instances){: external} and [Building integrations](https://www.ibm.com/docs/en/cloud-paks/cp-integration/latest?topic=building-integrations){: external} in IBM Documentation.
+
+## Known limitations
+{: #known-limitations}
+
+The IBM Cloud software catalog installer for Cloud Pak for Integration does not support installation in the following environments:
+
+- Multi-zone region (MZR) clusters in IBM Cloud Classic infrastructure
+- Clusters that are deployed in IBM Cloud VPC, in either single-zone or multi-zone topologies
+
+These environments do not provide the storage that is required to deploy Cloud Pak for Integration in a resilient way. 
+
+You can install into these environments by following a manual installation process instead. During manual installation, you can specify appropriate storage. For more information, see [Storage considerations](https://www.ibm.com/docs/en/cloud-paks/cp-integration/latest?topic=requirements-storage-considerations){: external} in IBM 
