@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-01-26"
+lastupdated: "2024-02-01"
 
 keywords: getting started tutorial, getting started, Cloud Pak for Integration, integration
 
@@ -116,4 +116,4 @@ The IBM Cloud software catalog installer for Cloud Pak for Integration does not 
 
 These environments do not provide the storage that is required to deploy Cloud Pak for Integration in a resilient way. 
 
-You can install into these environments by following a manual installation process instead. During manual installation, you can specify appropriate storage. For more information, see [Storage considerations](https://www.ibm.com/docs/en/cloud-paks/cp-integration/latest?topic=requirements-storage-considerations){: external} in IBM 
+You can install into these environments by following a manual installation process instead. During manual installation, you can specify appropriate storage. For more information, see [Storage considerations](https://www.ibm.com/docs/en/cloud-paks/cp-integration/latest?topic=requirements-storage-considerations){: external} in IBM.
